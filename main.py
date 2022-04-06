@@ -1,11 +1,13 @@
-import pygame
-from pygame.draw import *
 from func import *
 pygame.init()
 FPS = 30
 
 
-def main_cycle(z):
+def main_cycle():
+    """
+    Функция главного цикла.
+    Функция ничего не принимает.
+    """
     print('Выберите номер задания:')
     print(' 1. Вывод злого смайлика', '\n',
           '2. Вывод картины с котом', '\n',
@@ -52,7 +54,8 @@ def main_cycle(z):
 print('Данная программа позволяет выводить на экран изображения, сделанные с помощью библиотеки PyGame', '\n')
 z = 1
 while z == 1:
-    main_cycle(z)
+    main_cycle()
+    help(cat_scale)
     print('Хотите продолжить?', '\n',
           '1 - да', '\n',
           '2 - нет')
